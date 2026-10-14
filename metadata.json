@@ -1,0 +1,6 @@
+{
+  "name": "Brigaderia Pedaço do Céu | Doceria & Confeitaria Gourmet",
+  "description": "A mais amada brigaderia artesanal de Taboão da Serra. Brigadeiros gourmet, copos da felicidade, brownies fartos e morangos cravejados na Avenida Doutor José Maciel, 1053.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

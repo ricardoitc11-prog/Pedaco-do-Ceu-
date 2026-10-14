@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: 199 89% 48%; /* #0EA5E9 - Azul Oceano */
+    --primary-foreground: 210 40% 98%;
+    --primary-hover: 201 94% 40%;
+    --primary-light: 199 95% 94%;
+    
+    --secondary: 210 40% 98%; /* #F8FAFC - Branco Gelo */
+    --secondary-foreground: 215 35% 15%;
+
+    --bg-warm: 40 33% 98%; /* Creme artesanal suave */
+    --surface: 0 0% 100%; /* Cartões e painéis limpos */
+    --surface-tint: 210 40% 97%;
+    
+    --foreground: 217 33% 14%; /* Contraste WCAG AAA legibilidade */
+    --muted: 214 20% 45%;
+    --subtle: 214 15% 92%;
+    --border-hairline: 214 32% 90%;
+
+    --accent-amber: 36 95% 48%; /* Ouro da crosta do pão artesanal */
+  }
+
+  body {
+    background-color: hsl(var(--bg-warm));
+    color: hsl(var(--foreground));
+    font-family: 'Open Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Utilitários semânticos */
+.bg-warm-creme {
+  background-color: hsl(var(--bg-warm));
+}
+
+.bg-surface-card {
+  background-color: hsl(var(--surface));
+}
+
+.bg-ocean-primary {
+  background-color: hsl(var(--primary));
+}
+
+.text-ocean-primary {
+  color: hsl(var(--primary));
+}
+
+.text-charcoal {
+  color: hsl(var(--foreground));
+}
+
+.text-muted-charcoal {
+  color: hsl(var(--muted));
+}
+
+.border-hairline {
+  border-color: hsl(var(--border-hairline));
+}
+
+/* Sombra sofisticada em camadas */
+.shadow-premium {
+  box-shadow: 0 4px 6px -1px rgba(14, 165, 233, 0.05), 
+              0 12px 24px -4px rgba(15, 23, 42, 0.06),
+              0 1px 2px 0 rgba(15, 23, 42, 0.04);
+}
+
+.shadow-premium-hover {
+  box-shadow: 0 10px 25px -3px rgba(14, 165, 233, 0.12),
+              0 20px 35px -5px rgba(15, 23, 42, 0.09);
+}
+
+/* Efeito sutil de vapor / brilho artesanal */
+.glow-ocean {
+  box-shadow: 0 0 40px -10px rgba(14, 165, 233, 0.35);
+}
+
+/* Hero clamp dinâmico para título impressionante */
+.hero-title-clamp {
+  font-size: clamp(2.75rem, 5.5vw + 1rem, 5.5rem);
+  line-height: 1.05;
+}
+
+.section-title-clamp {
+  font-size: clamp(2rem, 3.5vw + 0.5rem, 3.75rem);
+  line-height: 1.15;
+}
